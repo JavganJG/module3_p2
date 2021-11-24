@@ -7,17 +7,11 @@ class Patient:
         self.__telephone = telephone
         self.__email = email
         self.__historyVisits = []
-        self.__numberVisits = self.__historyVisits.count()
+        self.__numberVisits = 0
        
     def __str__(self):
-        return ("DNI: "+self.__dni+", Name: "+self.__name)
+        return ("DNI: "+str(self.__dni)+", Name: "+str(self.__name))
 
-    def addApointment(self,appointment):
-        try:
-            self.__historyVisits.append(appointment)
-            return True
-        except:
-            return False
 
     def getDni(self):
         return self.__dni
