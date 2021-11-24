@@ -31,6 +31,7 @@ class EventSport:
         th = random.choice(participants)
         participants.remove(th)
         self.__podium = {"FIRST":fi,"SECOND":se,"THIRD":th}
+        self.__finished = True
 
     
 

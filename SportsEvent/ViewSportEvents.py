@@ -89,6 +89,7 @@ while True:
         finished = controller.getSportEventFinished()
         for se in finished:
             print(str(se))
+            print(se.getPodium())
             """print(se.getPodium)"""
     elif option == 5:
         name = input("Name of the Event to finish: ")
